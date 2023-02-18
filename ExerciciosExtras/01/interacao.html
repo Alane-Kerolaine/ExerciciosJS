@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação JS</title>
+    <link rel="stylesheet" href="interacaoStyle.css">
+</head>
+<body>
+
+    <h1>Interagindo com um botão</h1>
+    <div>
+        <input onclick="clicar()" id="clicar" type="button" value="Clique aqui para começar">
+    </div>
+    <section id="resposta"></section>
+
+    <script>
+        //var a = document.getElementById('clicar');
+        //a.addEventListener('click', clicar);
+
+        function clicar(){
+            let nome = window.prompt("Qual é o seu nome?");
+            let res = window.document.getElementById('resposta');
+            res.innerHTML = `Olá, <strong>${nome}</strong>! É um prazer te conhecer! &#x1F596`
+        }
+
+    </script>
+
+    
+</body>
+</html>

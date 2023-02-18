@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando com JS</title>
+    <link rel="stylesheet" href="SomaStyle.css">
+</head>
+<body>
+
+    <h1>Somando dois números</h1>
+    <input id="cli" type="button" value="Iniciar a soma">
+    <section id="resultado"></section>
+
+    <script>
+        var c = document.getElementById('cli');
+        c.addEventListener('click', somar);
+
+        function somar(){
+            let entrada1 = Number(window.prompt("Digite um número: "));
+            let entrada2 = Number(window.prompt("Digite outro número: "));
+            let soma = entrada1 + entrada2;
+            let res = document.getElementById('resultado');
+            res.innerHTML = `A soma entre <mark>${entrada1}</mark> e <mark>${entrada2}</mark> é igual a <strong>${soma}</strong>!`;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    font: normal 12pt Arial;
+}
+input#clicar{
+    font: normal 12pt Arial;
+    width: 200px;
+    height: 75px;
+}
+section#resposta{
+    font: normal 12pt Arial;
+    margin-top: 20px;
+}
