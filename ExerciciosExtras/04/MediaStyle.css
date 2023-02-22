@@ -1,0 +1,11 @@
+body{
+    font: normal 12pt Arial;
+    background-color: aliceblue;
+}
+input#calc{
+    width:200;
+    height: 150;
+}
+section{
+    margin-top: 20px;
+}
