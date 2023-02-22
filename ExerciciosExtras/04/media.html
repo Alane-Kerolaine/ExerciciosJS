@@ -23,7 +23,12 @@
             var media = (nota1 + nota2)/2;
             var res = document.querySelector("section#saida");
 
-            res.innerHTML = `Calculando a média de <mark>${nome}</mark><br>`;
+            res.innerHTML = `Calculando a média de <mark>${nome}</mark>...<br>`;
+            if(media >= 7){
+                res.innerHTML += `<mark style=background-color:lightgreen>ALUNO APROVADO</mark><br>`;
+            }else{
+                res.innerHTML += `<mark style=background-color:red>ALUNO REPROVADO</mark><br>`;
+            }
             res.innerHTML += `As notas obtidas foram <mark>${nota1}</mark> e <mark>${nota2}</mark><br>`;
             res.innerHTML += `A média final será: <mark>${media}</mark>`;
 
