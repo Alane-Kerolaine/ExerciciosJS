@@ -1,0 +1,16 @@
+h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+input{
+    width: 170px;
+    height: 80px;
+    font: 12pt Arial;
+}
+p{
+    font: normal 12pt Arial;
+}
+#saida{
+    font: normal 12pt Arial;
+    margin-top: 20px;
+}

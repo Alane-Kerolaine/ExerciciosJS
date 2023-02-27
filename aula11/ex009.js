@@ -1,3 +1,4 @@
+//condição composta
 var pais = 'EUA';
 console.log(`Nascido em ${pais}`);
 if(pais == 'Brasil'){

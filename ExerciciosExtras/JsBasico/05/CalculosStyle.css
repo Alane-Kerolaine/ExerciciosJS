@@ -1,0 +1,16 @@
+body{
+    font: normal 12pt Arial;
+}
+input#cli{
+    font: normal 12pt Arial;
+    width: 200px;
+    height: 80px;
+    border-style: solid;
+}
+section#saida{
+    margin-top: 10pt;
+    line-height: 25pt;
+}
+hr{
+    border-color: red;
+}

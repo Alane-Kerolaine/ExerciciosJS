@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculos com JS</title>
+    <link rel="stylesheet" href="CalculosStyle.css">
+</head>
+<body>
+
+    <h1>Vários cálculos em JS</h1>
+    <input id="cli" type="button" value="Clique para calcular">
+    <section id="saida"></section>
+
+    <script>
+
+        var c = document.querySelector("input#cli");
+        c.addEventListener('click', calcular);
+
+        function calcular(){
+            var n = Number(window.prompt("Digite um número para calcular"));
+            var s = document.querySelector("section#saida");
+            
+            s.innerHTML = `O número a ser analisado aqui será o <strong>${n}</strong><hr>`;
+            s.innerHTML += `O seu valor absoluto é ${Math.abs(n)}<br>`;
+            s.innerHTML += `A sua parte inteira é ${Math.trunc(n)}<br>`;
+            s.innerHTML += `O valor inteiro mais próximo é ${Math.round(n)}<br>`;
+            s.innerHTML += `A sua raiz quadrada é ${Math.sqrt(n)}<br>`;
+            s.innerHTML += `A sua raiz cúbica é ${Math.cbrt(n)}<br>`;
+            s.innerHTML += `O valor de ${n}² é ${Math.pow(n, 2)}<br>`;
+            s.innerHTML += `O valor de ${n}³ é ${Math.pow(n, 3)}`;
+
+
+            
+
+
+
+        }
+    </script>
+    
+</body>
+</html>
